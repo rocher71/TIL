@@ -2,7 +2,7 @@
 
 ## 배열
 
-* idx로 배열의 요소 삭제하는 법
+* idx로 배열의 요소 삭제하는 법 : "splice"
 ```javascript
 let arr = [1, 2, 3, 4, 5];
 const idx = arr.indexOf(4);
@@ -12,7 +12,7 @@ if(idx > -1) arr.splice(idx,1);
 
 ## 변수
 
-* 깊은 복사 하는 법
+* 깊은 복사 하는 법 : "cloneDeep"
 ```html
 // cdn
 <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
