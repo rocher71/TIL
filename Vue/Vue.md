@@ -19,7 +19,7 @@ v-else 뒤에는 아무것도 안 써도 됨.
 ## radio버튼
 - script에 있는 변수값에 따라 미리 check
 ```html
-// :checked attribute 추가해주기!
+<!-- :checked attribute 추가해주기! -->
 <input type="radio" :checked="fruit == '사과'">
 ```
 ```html
@@ -28,7 +28,7 @@ v-else 뒤에는 아무것도 안 써도 됨.
 <label for="apple">사과</label>
 <input type="radio" name="radioBtn" id="banana" :checked="fruit == '바나나'"/>
 <label for="banana">바나나</label>
-//script
+<!-- script -->
 <script>
 export default{
   data(){
