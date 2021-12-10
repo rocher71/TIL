@@ -23,7 +23,7 @@ v-else 뒤에는 아무것도 안 써도 됨.
 <input type="radio" :checked="fruit == '사과'">
 ```
 ```html
-//전체 코드
+<!-- 전체 코드 -->
 <input type="radio" name="radioBtn" id="apple" :checked="fruit == '사과'"/>
 <label for="apple">사과</label>
 <input type="radio" name="radioBtn" id="banana" :checked="fruit == '바나나'"/>
