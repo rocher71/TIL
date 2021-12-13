@@ -37,3 +37,25 @@ export default{
 }
 </script>
 ```
+
+
+## filter
+Vue는 텍스트 형식화를 적용할 수 있는 필터를 지원한다. Mustache 구문나 'v-bind' 표현법을 이용할 때 사용가능하다.
+- 숫자에 콤마 삽입하기
+```html
+<span>{{price | addCommaToNum}}</span>
+<!-- script -->
+<script>
+export default{
+  data(){
+    price: "1000000"
+  },
+  filters:{
+    addCommaToNum: function (str) {
+      return String(str).replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    },
+  }
+}
+</script>
+<!-- 출력 : 1,000,000 -->
+```
