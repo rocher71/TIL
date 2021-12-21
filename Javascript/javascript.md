@@ -32,3 +32,27 @@ let idx = arr.findIndex(i=>i.name == "철수");
   let copyVar = _.cloneDeep(originData);
 </script>
 ```
+
+
+## Textarea 줄바꿈 그대로 db에 입력하고 출력하기
+* db에 저장하기 전에 ```\n``` -> ```<br/>```로 변환,  <br>
+  가져온 후 출력하기 전 ```<br/>``` -> ```\n``` 변환
+```html
+<!-- textarea에 wrap="hard", cols="~" 속성을
+꼭 넣어줘야 한다고 하는데, 확인은 안해봤다. -->
+<textarea model="cntnt" wrap="hard" cols="30"></textarea>
+<button onclick="saveDB(cntnt);">저장</button>
+<span>{{dbCntnt}}</span>
+<script>
+function saveDB(cntnt){
+  //\n -> <br/>
+  cntnt = cntnt.replace(/(?:\r\n|\r|\n)/g,'<br/>');
+  //db 저장
+}
+function getDB(){
+  //http 통신해서 가져옴
+  //<br/> -> \n
+  dbCntnt = dbCntnt.replace(/<br\s*\/?>/mg,'\n');
+}
+</script>
+```
