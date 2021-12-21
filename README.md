@@ -1,5 +1,4 @@
 # TIL
-Today I Learned! <br>
 :ant: Today I Learned - 오늘 배운 소소한 내용들 :ant:
 
 개념에 대한 정리보단, 주로 자주 쓰는데 잘 까먹는 것들을 정리한 repository입니다.
