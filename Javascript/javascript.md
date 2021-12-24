@@ -57,3 +57,11 @@ function getDB(){
 }
 </script>
 ```
+
+# 정규식
+
+## ```\n``` -> ```<br>``` 변환하기
+* 메일 전송시 사용
+```javascript
+str.replace(/\n/g, "<br />");
+```
