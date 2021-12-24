@@ -43,7 +43,8 @@ let idx = arr.findIndex(i=>i.name == "철수");
 꼭 넣어줘야 한다고 하는데, 확인은 안해봤다. -->
 <textarea model="cntnt" wrap="hard" cols="30"></textarea>
 <button onclick="saveDB(cntnt);">저장</button>
-<span>{{dbCntnt}}</span>
+<span style="white-space: pre-line;">{{dbCntnt}}</span>
+<!-- style="white-space: pre-line;" 필수!! -->
 <script>
 function saveDB(cntnt){
   //\n -> <br/>
