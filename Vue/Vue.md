@@ -59,3 +59,15 @@ export default{
 </script>
 <!-- 출력 : 1,000,000 -->
 ```
+
+<br>
+
+## Data Binding
+* href 바인딩 하는법 - 포인트는 `${}` !
+```html
+<tr v-for="(list, idx) in showList" v-bind:key="idx">
+  <td>
+    <a :href="`/order/${list.id}`">클릭</a>
+  </td>
+</tr>
+```
