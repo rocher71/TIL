@@ -22,8 +22,25 @@ v-model은 동일 component 내에서 입력 값을 component data와 바인딩 
 ```javascript
 //자식 component
 export default{
-  props: {
-    key: vaue
-  }
+  props: ["membrId", 'membrCnt'],
 }
+```
+
+<br>
+
+## Watch
+child component에서 사용하는 메소드(?)로 부모 컴포넌트에서 쏴주는 props 값이 계속 바뀔 때, 이 값을 그때 그때 받아오기 위해 쓰임.
+* 받아오려는 props의 이름과 같은 이름으로 watch 내부에 메소드를 선언해주면 된다.
+```JAVASCRIPT
+export default {
+  props: ['membrID'],
+  watch: {
+    membrID(newVal) {
+      console.log("membrID : ", newVal);
+    },
+  },
+  methods: {
+    log(){
+      console.log('membrId : ', this.membrId);
+  }
 ```
