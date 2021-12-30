@@ -13,6 +13,7 @@
   * <a href="https://github.com/rocher71/TIL/blob/main/Javascript/javascript.md#%EA%B9%8A%EC%9D%80-%EB%B3%B5%EC%82%AC-%ED%95%98%EB%8A%94-%EB%B2%95--clonedeep">깊은 복사 하는 법 : "cloneDeep"</a>
 
 * <a href="https://github.com/rocher71/TIL/blob/main/Javascript/javascript.md#textarea-%EC%A4%84%EB%B0%94%EA%BF%88-%EA%B7%B8%EB%8C%80%EB%A1%9C-db%EC%97%90-%EC%9E%85%EB%A0%A5%ED%95%98%EA%B3%A0-%EC%B6%9C%EB%A0%A5%ED%95%98%EA%B8%B0">Textarea 줄바꿈 그대로 db에 입력하고 출력하기</a>
+* <a href="https://github.com/rocher71/TIL/blob/main/Javascript/javascript.md#%EC%A0%95%EA%B7%9C%EC%8B%9D">정규식</a>
 
 
 ## Vue.js
@@ -21,6 +22,8 @@
     * <a href="https://github.com/rocher71/TIL/blob/main/Vue/Vue.md#html%EC%97%90%EC%84%9C-if%EB%AC%B8">html에서 if문</a>
     * <a href="https://github.com/rocher71/TIL/blob/main/Vue/Vue.md#radio%EB%B2%84%ED%8A%BC"> radio 버튼 </a>
     * <a href="https://github.com/rocher71/TIL/blob/main/Vue/Vue.md#filter"> filter </a>
+    * <a href="https://github.com/rocher71/TIL/blob/main/Vue/Vue.md#data-binding"> Data Binding </a>
+    * <a href="https://github.com/rocher71/TIL/blob/main/Vue/Vue.md#db-date-처리하기"> Moment - db date 처리하기 </a>
 
 * Props and Emit
   * <a href="https://github.com/rocher71/TIL/blob/main/Vue/props_emit.md#props--emit">Props and Emit</a>
