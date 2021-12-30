@@ -71,3 +71,19 @@ export default{
   </td>
 </tr>
 ```
+
+## DB Date 처리하기
+* 그냥 시간을 Date객체로 가져오면 다 우리나라 시간이랑 시차 차이가 난다. 
+moment를 사용하면 편리하게 처리할 수 있다.
+```html
+<span>{{ order.call_dt | moment("YYYY-MM-DD") }}</span>
+<span>{{ order.call_dt | moment("YYYY-MM-DD HH:mm:ss") }}</span>
+//script
+<script>
+import Vue from "vue";
+import VueMoment from "vue-moment";
+Vue.use(VueMoment);
+let dateFormSec = this.$moment(this.originalDate).format("YYYY-MM-DD hh:mm:ss");
+let dateFormDt = this.$moment(this.originalDate).format("YYYY-MM-DD");
+</script>
+```
