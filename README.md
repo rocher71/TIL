@@ -28,3 +28,4 @@
 * Props and Emit
   * <a href="https://github.com/rocher71/TIL/blob/main/Vue/props_emit.md#props--emit">Props and Emit</a>
   * <a href="https://github.com/rocher71/TIL/blob/main/Vue/props_emit.md#%EA%B7%9C%EC%B9%99">규칙</a>
+  * <a href="https://github.com/rocher71/TIL/blob/main/Vue/props_emit.md#watch">Watch</a>
