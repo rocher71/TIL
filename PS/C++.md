@@ -28,4 +28,22 @@ cin.ignore();
 getline(cin, str);
 //cin과 getline 모두 잘 작동함.
 ~~~
+<br></br>
+# cin.eof()
+- 모든 파일의 끝에는, 우리가 눈으로 볼 수는 없으나 EOF(End Of File)라는 표시가 붙어 있다.
+- cin으로 입력을 받으려 할 때 EOF가 읽히면 입력 받기가 취소되고 cin.eof()가 true가 나온다.
+- 터미널에서 직접 입력을 할 땐 EOF를 수동으로 넣어줘야 한다.
+- 윈도우에서는 Ctrl + Z, 유닉스에서는 Ctrl + D 이다.
+- BOJ에서는 입력을 넣을 때 파일로 주기 때문에 EOF가 붙어있다.
+~~~C++
+for(int i =0;i < 100;i ++){
+    string str;
+    getline(cin, str);
+        
+    if(str == "")
+        return 0;
+        
+    cout<<str<<"\n";
+}
+~~~
 
