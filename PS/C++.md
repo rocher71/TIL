@@ -35,6 +35,7 @@ getline(cin, str);
 - 터미널에서 직접 입력을 할 땐 EOF를 수동으로 넣어줘야 한다.
 - 윈도우에서는 Ctrl + Z, 유닉스에서는 Ctrl + D 이다.
 - BOJ에서는 입력을 넣을 때 파일로 주기 때문에 EOF가 붙어있다.
+- xcode는 Ctrl + D 를 입력하면 엔터를 누르지 않아도 바로 eof로 받아들이게 된다.
 ~~~C++
 for(int i =0;i < 100;i ++){
     string str;
@@ -46,4 +47,11 @@ for(int i =0;i < 100;i ++){
     cout<<str<<"\n";
 }
 ~~~
-
+```C++
+int n;
+    cin>>n;
+    if(cin.eof())
+        cout<< "eof!\n";
+    else
+        cout<< n;
+```
