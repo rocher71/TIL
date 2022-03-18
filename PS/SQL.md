@@ -15,3 +15,19 @@ GROUP BY NAME
 ORDER BY NAME
 HAVING COUNT > 1
 ```
+
+
+# 변수
+- 선언
+```sql
+SET @CNT = -1
+```
+- for 문
+```SQL
+SET @CNT = -1
+
+SELECT (@CNT := @CNT + 1)
+WHERE @CNT < 10
+-- 0 부터 '10'까지 출력됨
+```
+
