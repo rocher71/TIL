@@ -31,3 +31,11 @@ WHERE @CNT < 10
 -- 0 부터 '10'까지 출력됨
 ```
 
+# if문
+- case when 조건 then 실행 else 실행 end
+```sql
+SELECT NAME,
+    CASE WHEN AGE > 10 THEN 'OLD' ELSE AGE END,
+    SEX
+FROM TMP_TABLE
+```
